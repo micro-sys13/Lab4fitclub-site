@@ -106,7 +106,10 @@
                 <div class="col-lg-8">
                     <div class="form-section">
                         <h2 class="section-title">Форма запису на пробне тренування</h2>
-                        <form class="needs-validation" novalidate>
+                        <form class="needs-validation" action="https://formsubmit.co/qwerty3458766@gmail.com" method="post" novalidate>
+                            <input type="hidden" name="_subject" value="Нова заявка з сайту FITCLUB">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <label for="name" class="form-label">Ваше ім’я</label>
@@ -139,11 +142,7 @@
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-fitclub" type="submit">Надіслати заявку</button>
-                                </div>
-                                <div class="col-12">
-                                    <div class="alert alert-success d-none form-success mb-0" role="alert">
-                                        Заявку успішно відправлено. Дані форми прийнято в обробку.
-                                    </div>
+                                    <p class="form-note mt-3 mb-0">Після відправлення заявка буде надіслана на електронну пошту клубу.</p>
                                 </div>
                             </div>
                         </form>

@@ -22,21 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     forms.forEach(function (form) {
         form.addEventListener("submit", function (event) {
-            event.preventDefault();
-
             if (!form.checkValidity()) {
+                event.preventDefault();
                 event.stopPropagation();
                 form.classList.add("was-validated");
-                return;
             }
-
-            const successMessage = form.querySelector(".form-success");
-            if (successMessage) {
-                successMessage.classList.remove("d-none");
-            }
-
-            form.reset();
-            form.classList.remove("was-validated");
         });
     });
 });
